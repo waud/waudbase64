@@ -35,8 +35,6 @@ module.exports = function() {
         try {
             var files = fs.readdirSync(folder);
             files.forEach(function (file) {
-                for (var i = 0; i < IGNORE_FILES.length; i++) if (IGNORE_FILES[i].test(file)) return;
-
                 var ext = file.split(".").pop();
                 var filePath = folder + "/" + file;
                 var stats = fs.statSync(filePath);
@@ -47,7 +45,7 @@ module.exports = function() {
             });
         }
         catch (e) {
-            callback("can't read directory - " + folder);
+            callback("failed with exception: " + e.message);
         }
     }
 }
