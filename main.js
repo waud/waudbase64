@@ -32,10 +32,10 @@ winston.debug("parsed arguments", argv);
 
 opts.logger = winston;
 
-if (argv.help || !opts.input) {
-    if (!opts.output) opts.output = "sounds.json";
+opts.output = argv.output ? argv.output : opts.input + "/sounds.json";
+if (argv.help || !opts.input || !opts.output) {
     if (!argv.help) winston.error("invalid options");
-    winston.info("Usage: waudbase64 -i resources -o audio.json");
+    winston.info("Usage: waudbase64 -i sounds -o sounds.json");
     winston.info(optimist.help());
     process.exit(1);
 }
