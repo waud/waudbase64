@@ -12,7 +12,7 @@ var optimist = require("optimist")
     })
     .options("output", {
         alias: "o"
-        , describe: "output JSON file"
+        , describe: "output JSON file (default: sounds.json)"
     })
     .options("help", {
         alias: "h"
@@ -32,7 +32,8 @@ winston.debug("parsed arguments", argv);
 
 opts.logger = winston;
 
-if (argv.help || !opts.input || !opts.output) {
+if (argv.help || !opts.input) {
+    if (!opts.output) opts.output = "sounds.json";
     if (!argv.help) winston.error("invalid options");
     winston.info("Usage: waudbase64 -i resources -o audio.json");
     winston.info(optimist.help());
