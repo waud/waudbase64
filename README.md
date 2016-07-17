@@ -28,3 +28,12 @@ info: Options:
   --output, -o  output JSON file (default: sounds.json)
   --help, -h    help
 ```
+
+###Example with waud.js
+
+```
+var base64pack = WaudBase64Pack("assets/sounds.json", _onLoad);
+function _onLoad(snds:Map<String, IWaudSound>) {
+  snds.get("assets/beep.mp3").play();
+}
+```
