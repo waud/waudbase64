@@ -1,11 +1,11 @@
 {
     "name": "waudbase64",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Base64 generator for waud.js",
     "main": "./pack.js",
     "license": "MIT",
     "bin": {
-	"resource-scaler": "./main.js"
+	"waudbase64": "./main.js"
     },
     "scripts": {
 	"test": "echo \"no test specified\" && exit 0"
