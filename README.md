@@ -42,6 +42,10 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 }
 ```
 
+###Sample
+
+[http://adireddy.github.io/demos/waud/base64.html](http://adireddy.github.io/demos/waud/base64.html)
+
 ###More Info
 
 Note that the file size of base64 encoded JSON file will be more than the actual sound file(s).
