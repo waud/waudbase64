@@ -35,9 +35,9 @@ info: Options:
 ###Example with waud.js
 
 ```
-var base64pack = WaudBase64Pack("assets/sounds.json", _onLoad);
+var base64pack = new WaudBase64Pack("assets/sounds.json", _onLoad);
 
-function _onLoad(snds:Map<String, IWaudSound>) {
+function _onLoad(snds) {
   snds.get("assets/beep.mp3").play();
 }
 ```
