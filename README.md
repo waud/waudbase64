@@ -35,6 +35,7 @@ info: Options:
 
 ```
 var base64pack = WaudBase64Pack("assets/sounds.json", _onLoad);
+
 function _onLoad(snds:Map<String, IWaudSound>) {
   snds.get("assets/beep.mp3").play();
 }
