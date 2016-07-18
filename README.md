@@ -43,7 +43,7 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 
 ###More Info
 
-Note that the file size of base64 encoded JSON file will be more than the actual sound files.
+Note that the file size of base64 encoded JSON file will be more than the actual sound file(s).
 
 But if your web server have **gzip** compression enabled for JSON files then the network trabsfer size will be smaller than loading individual sound files.
 
