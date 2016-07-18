@@ -53,6 +53,6 @@ Enabling gzip compression is a standard practice and most likely your web server
 
 Size of 6 individual mp3 sound files before base64 encoding: **589 KB**
 
-Size of base64 encoded JSON with all the 6 spunds: **785 KB**
+Size of base64 encoded JSON with all the 6 sounds: **785 KB**
 
 Network transfer size with gzip enabled: **552 KB**
