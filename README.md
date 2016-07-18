@@ -23,7 +23,7 @@ waudbase64 -i sounds -o sounds.json
 ###Help
 
 ```
-waudsprite --help
+waudbase64 --help
 info: Usage: waudbase64 -i sounds -o sounds.json
 info: Options:
   --input, -i   input folder                           
