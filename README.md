@@ -6,8 +6,6 @@ Base64 generator for [waud.js](https://github.com/adireddy/waud)
 
 Base64 decoding is widely supported across all browsers with the exception of IE 9 and below. IE 10+ and Edge are supported.
 
-[![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://adireddy.github.io/demos/waud/base64.html)
-
 ###Installation
 
 ```
