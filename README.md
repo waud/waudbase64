@@ -45,13 +45,14 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 
 Note that the file size of base64 encoded JSON file will be more than the actual sound files.
 
-But if your web server have gzip compression enabled for JSON files then the network trabsfer size will be smaller than loading individual sound files.
+But if your web server have **gzip** compression enabled for JSON files then the network trabsfer size will be smaller than loading individual sound files.
 
 Enabling gzip compression is a standard practice and most likely your web server has it enabled already and to verify that you can open the network tab in chrome developer tools can click on any JSON file thats loaded. If you notice `Content-Encoding:gzip` on Response Headers section then it's already enabled.
 
 Some numbers for example:
 
-Size of 6 individual mp3 sound files before base64 encoding: 589 KB
-Size of base64 encoded JSON with all the 6 spunds: 785 KB
+Size of 6 individual mp3 sound files before base64 encoding: **589 KB**
 
-Network transfer size with gzip enabled: 552 KB
+Size of base64 encoded JSON with all the 6 spunds: **785 KB**
+
+Network transfer size with gzip enabled: **552 KB**
