@@ -1,6 +1,6 @@
 {
     "name": "waudbase64",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Base64 generator for waud.js",
     "main": "./pack.js",
     "license": "MIT",
@@ -32,9 +32,6 @@
 	"dataURI"
     ],
     "dependencies": {
-	"grunt": "latest",
-	"grunt-cli": "latest",
-	"grunt-exec": "latest",
 	"winston": "~1.0.0",
 	"optimist": "~0.6.1",
 	"underscore": "~1.8.3"
