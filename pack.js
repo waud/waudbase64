@@ -1,12 +1,11 @@
-var fs = require("fs");
-
 module.exports = function() {
+    var fs = require("fs");
     var opts = arguments[0];
     var callback = arguments[1];
     var inputFolder = opts.input;
     var outputFile = opts.output;
     var list = {};
-    var types = {
+    var MIME_TYPES = {
         "mp3": "audio/mpeg",
         "m4a": "audio/mp4",
         "mp4": "audio/mp4",
@@ -41,7 +40,7 @@ module.exports = function() {
                 if (stats.isDirectory()) listFiles(filePath);
                 var data = fs.readFileSync(filePath, "base64");
 
-                if(types[ext]) list[filePath] = "data:" + types[ext] + ";base64," + data;
+                if(MIME_TYPES[ext]) list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
             });
         }
         catch (e) {
