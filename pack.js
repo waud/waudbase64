@@ -38,9 +38,10 @@ module.exports = function() {
                 var filePath = folder + "/" + file;
                 var stats = fs.statSync(filePath);
                 if (stats.isDirectory()) listFiles(filePath);
-                var data = fs.readFileSync(filePath, "base64");
-
-                if(MIME_TYPES[ext]) list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
+                else {
+                    var data = fs.readFileSync(filePath, "base64");
+                    if(MIME_TYPES[ext]) list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
+                }
             });
         }
         catch (e) {
