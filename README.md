@@ -1,6 +1,4 @@
-# waudbase64
-
-[![npm version](https://badge.fury.io/js/waudbase64.svg)](https://www.npmjs.com/package/waudbase64)
+# waudbase64 [![npm version](https://badge.fury.io/js/waudbase64.svg)](https://www.npmjs.com/package/waudbase64)
 
 ![waud logo](https://raw.githubusercontent.com/adireddy/waud/dev/logo.png)
 
