@@ -1,6 +1,5 @@
 # waudbase64
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/waudbase64.svg)](https://www.npmjs.com/package/waudbase64)
 
 ![waud logo](https://raw.githubusercontent.com/adireddy/waud/dev/logo.png)
@@ -61,3 +60,14 @@ Size of 6 individual mp3 sound files before base64 encoding: **589 KB**
 Size of base64 encoded JSON with all the 6 sounds: **785 KB**
 
 Network transfer size with gzip enabled: **552 KB**
+
+### Licensing Information
+
+<a rel="license" href="http://opensource.org/licenses/MIT">
+<img alt="MIT license" height="40" src="http://upload.wikimedia.org/wikipedia/commons/c/c3/License_icon-mit.svg" /></a>
+
+This content is released under the [MIT](http://opensource.org/licenses/MIT) License.
+
+### Contributor Code of Conduct ###
+
+[Code of Conduct](https://github.com/CoralineAda/contributor_covenant) is adapted from [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4)
