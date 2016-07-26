@@ -4,7 +4,9 @@ module.exports = function() {
     var callback = arguments[1];
     var inputFolder = opts.input;
     var outputFile = opts.output;
-    var list = {};
+    var list = { "meta": [0, 0] };
+    var count = 0;
+    var size = 0;
     var MIME_TYPES = {
         "mp3": "audio/mpeg",
         "m4a": "audio/mp4",
@@ -28,6 +30,8 @@ module.exports = function() {
     }
 
     if (inputFolder) listFiles(inputFolder);
+    list["meta"] = [count, size];
+
     fs.writeFileSync(outputFile, JSON.stringify(list));
 
     function listFiles(folder) {
@@ -40,7 +44,11 @@ module.exports = function() {
                 if (stats.isDirectory()) listFiles(filePath);
                 else {
                     var data = fs.readFileSync(filePath, "base64");
-                    if(MIME_TYPES[ext]) list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
+                    if(MIME_TYPES[ext]) {
+                        list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
+                        count++;
+                        size += stats.size;
+                    }
                 }
             });
         }
