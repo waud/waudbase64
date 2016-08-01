@@ -27,7 +27,7 @@ module.exports = function() {
         "aiff": "audio/x-aiff",
         "mid": "audio/midi",
         "midi": "audio/midi"
-    }
+    };
 
     if (inputFolder) listFiles(inputFolder);
     list["meta"] = [count, size];
