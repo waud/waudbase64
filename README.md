@@ -1,6 +1,6 @@
 # waudbase64 [![npm version](https://badge.fury.io/js/waudbase64.svg)](https://www.npmjs.com/package/waudbase64)
 
-![waud logo](https://raw.githubusercontent.com/waud/waud/dev/logo.png)
+<a href="http://waudjs.com"><img class="logo" width="280" height="60" src="http://waud.github.io/images/logo/logo.png" alt="Waud"/></a>
 
 Base64 generator for [waud.js](https://github.com/waud/waud)
 
