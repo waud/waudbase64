@@ -41,7 +41,7 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 
 ###Sample
 
-[http://adireddy.github.io/demos/waud/base64.html](http://waud.github.io/sample/base64.html)
+[http://waud.github.io/sample/base64.html](http://waud.github.io/sample/base64.html)
 
 ###More Info
 
