@@ -1,8 +1,8 @@
 # waudbase64 [![npm version](https://badge.fury.io/js/waudbase64.svg)](https://www.npmjs.com/package/waudbase64)
 
-![waud logo](https://raw.githubusercontent.com/adireddy/waud/dev/logo.png)
+![waud logo](https://raw.githubusercontent.com/waud/waud/dev/logo.png)
 
-Base64 generator for [waud.js](https://github.com/adireddy/waud)
+Base64 generator for [waud.js](https://github.com/waud/waud)
 
 Base64 decoding is widely supported across all browsers.
 
@@ -41,7 +41,7 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 
 ###Sample
 
-[http://adireddy.github.io/demos/waud/base64.html](http://adireddy.github.io/demos/waud/base64.html)
+[http://adireddy.github.io/demos/waud/base64.html](http://waud.github.io/sample/base64.html)
 
 ###More Info
 
