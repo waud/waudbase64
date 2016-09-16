@@ -24,9 +24,10 @@ waudbase64 -i sounds -o sounds.json
 waudbase64 --help
 info: Usage: waudbase64 -i sounds -o sounds.json
 info: Options:
-  --input, -i   input folder                           
-  --output, -o  output JSON file (default: sounds.json)
-  --help, -h    help
+  --input, -i         input folder (default: ./)                
+  --output, -o        output JSON file (default: sounds.json)   
+  --noBasePath, --nb  doesn't prepend base path to each asset id
+  --help, -h          help
 ```
 
 ###Example with waud.js

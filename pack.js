@@ -29,7 +29,7 @@ module.exports = function() {
         "midi": "audio/midi"
     };
 
-    if (inputFolder) listFiles(inputFolder);
+    listFiles(inputFolder);
     list["meta"] = [count, size];
 
     fs.writeFileSync(outputFile, JSON.stringify(list));
@@ -39,7 +39,7 @@ module.exports = function() {
             var files = fs.readdirSync(folder);
             files.forEach(function (file) {
                 var ext = file.split(".").pop();
-                var filePath = folder + "/" + file;
+                var filePath = opts.noBasePath ? file : folder + "/" + file;
                 var stats = fs.statSync(filePath);
                 if (stats.isDirectory()) listFiles(filePath);
                 else {

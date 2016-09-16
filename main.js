@@ -7,16 +7,16 @@ var pack = require("./pack");
 
 var optimist = require("optimist")
     .options("input", {
-        alias: "i"
-        , describe: "input folder"
+        alias: "i", describe: "input folder (default: ./)"
     })
     .options("output", {
-        alias: "o"
-        , describe: "output JSON file (default: sounds.json)"
+        alias: "o", describe: "output JSON file (default: sounds.json)"
+    })
+    .options("noBasePath", {
+        alias: "nb", describe: "doesn't prepend base path to each asset id"
     })
     .options("help", {
-        alias: "h"
-        , describe: "help"
+        alias: "h", describe: "help"
     });
 
 var argv = optimist.argv;
@@ -32,8 +32,10 @@ winston.debug("parsed arguments", argv);
 
 opts.logger = winston;
 
+if (!opts.input) opts.input = "./";
 opts.output = argv.output ? argv.output : opts.input + "/sounds.json";
-if (argv.help || !opts.input || !opts.output) {
+
+if (argv.help) {
     if (!argv.help) winston.error("invalid options");
     winston.info("Usage: waudbase64 -i sounds -o sounds.json");
     winston.info(optimist.help());
