@@ -1,6 +1,6 @@
 {
     "name": "waudbase64",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Base64 generator for waud.js",
     "main": "./pack.js",
     "license": "MIT",
