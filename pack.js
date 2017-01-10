@@ -39,13 +39,13 @@ module.exports = function() {
             var files = fs.readdirSync(folder);
             files.forEach(function (file) {
                 var ext = file.split(".").pop();
-                var filePath = opts.noBasePath ? file : folder + "/" + file;
+                var filePath = folder + "/" + file;
                 var stats = fs.statSync(filePath);
                 if (stats.isDirectory()) listFiles(filePath);
                 else {
                     var data = fs.readFileSync(filePath, "base64");
                     if(MIME_TYPES[ext]) {
-                        list[filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
+                        list[opts.noBasePath ? filePath.replace(inputFolder + "/", "") : filePath] = "data:" + MIME_TYPES[ext] + ";base64," + data;
                         count++;
                         size += stats.size;
                     }
