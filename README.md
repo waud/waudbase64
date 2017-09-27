@@ -6,19 +6,19 @@ Base64 generator for [waud.js](https://github.com/waud/waud)
 
 Base64 decoding is widely supported across all browsers.
 
-###Installation
+### Installation
 
 ```
 npm install -g waudbase64
 ```
 
-###Usage
+### Usage
 
 ```
 waudbase64 -i sounds -o sounds.json
 ```
 
-###Help
+### Help
 
 ```
 waudbase64 --help
@@ -30,7 +30,7 @@ info: Options:
   --help, -h          help
 ```
 
-###Example with waud.js
+### Example with waud.js
 
 ```
 var base64pack = new WaudBase64Pack("assets/sounds.json", _onLoad);
@@ -40,11 +40,11 @@ function _onLoad(snds:Map<String, IWaudSound>) {
 }
 ```
 
-###Sample
+### Sample
 
 [http://waud.github.io/sample/base64.html](http://waud.github.io/sample/base64.html)
 
-###More Info
+### More Info
 
 Note that the file size of base64 encoded JSON file will be more than the actual sound file(s).
 
@@ -58,7 +58,7 @@ Size of 6 individual mp3 sound files before base64 encoding: **589 KB**
 
 Size of base64 encoded JSON with all the 6 sounds: **785 KB**
 
-Network transfer size with gzip enabled: **552 KB**
+Network transfer size with **gzip** enabled: **552 KB**
 
 ### Licensing Information
 
@@ -67,6 +67,6 @@ Network transfer size with gzip enabled: **552 KB**
 
 This content is released under the [MIT](http://opensource.org/licenses/MIT) License.
 
-### Contributor Code of Conduct ###
+### Contributor Code of Conduct
 
 [Code of Conduct](https://github.com/CoralineAda/contributor_covenant) is adapted from [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4)
